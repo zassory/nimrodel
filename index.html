@@ -189,7 +189,7 @@
     </div>
   </div>
 
-  <div class="modal" id="myModal2">
+  <div id="carouseExampleCaptions" class="modal">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
   
@@ -205,27 +205,43 @@
           <ul class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
             <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
           </ul>
   
           <!-- Slides del carrusel -->
           <div class="carousel-inner">
-            <div class="carousel-item active bg-black" id="divImg">
-              <p class="p-1 text-center mt-2 text-white">Nimrodel significa "dama de la cueva blanca". Fue una elfa silvana
+
+            <div class="carousel-item active bg-black pb-2" id="card-modal1">
+              <p class="p-1 text-center mt-2 text-white mb-4">Nimrodel significa "dama de la cueva blanca". Fue una elfa silvana
                 que vivió durante la tercera edad dewl sol en el bosque de Lothlorien.
                En honor a su nombre, se acuña Nimrodel al rio que nace en las montañas nubladas</p>
-              <img src="assets/img/Modal/IMG1.jpg" alt="Imagen 1" class="col-lg-6 mx-auto w-50 m-2">
-            </div>            
+              <img src="assets/img/Modal/IMG1.jpg" alt="Imagen 1" class="col-lg-6 mx-auto w-50 m-2" id="divImg">
+            </div>
+
+            <div class="carousel-item bg-black pb-2" id="card-modal2">
+              <p class="p-1 text-center mt-2 mb-2 text-white">
+                Nimrodel Pub Restaurant es un oasis de calma y diversión, lleno de rincones acogedores
+                en donde se resalta la belleza de su decoración élfica.
+                Es un lugar ideal para visitar solo o acompañado, disfrutar una tarde con amigos, terminar
+                el día después del trabajo o almorzar con tu familia.
+                Puedes probar nuestras tradicionales tablas, en todas sus variedades y que nos han
+                otorgado reconocimiento dentro de la cultura gastronómica.
+                También puedes disfrutar nuestras cervezas de fabricación propia, con sabores que te
+                llevarán a un mágico mundo.”
+              </p>
+              <img src="assets/img/Modal/IMG2.jpg" alt="Imagen 2" class="col-lg-6 mx-auto w-50 m-2" id="divImg">
+            </div>
+
           </div>
   
           <!-- Controles del carrusel -->
-          <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
+          <a class="carousel-control-prev" data-bs-slide="prev" id="btn1">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
           </a>
-          <a class="carousel-control-next" href="#myCarousel" data-slide="next">
-            <span class="carousel-control-next-icon"></span>
+          <a class="carousel-control-next" data-bs-slide="next" id="btn2">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
           </a>
-  
         </div>
   
         <!-- Pie del modal 
@@ -236,7 +252,7 @@
       </div>
     </div>
   </div>
-  
+
   <footer class="bg-light text-center text-lg-start">
     <!-- Copyright -->
     <div class="text-center navbar p-3 texto-blanco d-flex justify-content-center">

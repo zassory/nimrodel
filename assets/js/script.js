@@ -148,12 +148,12 @@ var btnEnviar = document.getElementById("btnEnviar");
  });
 
  function mostrarModal(){
-    var modal = document.getElementById("myModal2");
+    var modal = document.getElementById("carouseExampleCaptions");
     modal.style.display = "block";    
     modal.setAttribute("class","modal animate__animated animate__fadeIn");
  }
  function cerrarModal(){
-    var modal = document.getElementById("myModal2");
+    var modal = document.getElementById("carouseExampleCaptions");
     modal.style.display = "none";
     modal.setAttribute("class","modal animate__fadeIn animate__animated ");
  }
@@ -169,6 +169,21 @@ var btnEnviar = document.getElementById("btnEnviar");
     cerrarModal();
  })
 
+var modal = document.getElementById("carouseExampleCaptions");
+var carousel = document.getElementById("myCarousel");
+var btn1 = document.getElementById("btn1");
+var btn2 = document.getElementById("btn2");
+var card_modal1 = document.getElementById("card-modal1");
+var card_modal2 = document.getElementById("card-modal2");
+
+  btn1.addEventListener("click", function () {    
+        card_modal1.setAttribute("class","carousel-item active bg-black");
+        card_modal2.setAttribute("class","carousel-item bg-black");
+  });
+  btn2.addEventListener("click", function () {    
+    card_modal1.setAttribute("class","carousel-item bg-black");
+    card_modal2.setAttribute("class","carousel-item active bg-black");
+ });
  
 
 

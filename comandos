@@ -1,0 +1,12 @@
+1)como uso linux primero me fije si existia una carpeta con ctrl + h y si existia por ende la borre
+2)luego inicie el repositorio con git init
+3)luego me pidio credenciales (hace poco formatie mi maquina) asi que las puse 
+  a) git config --global user.name "Nicolas Caceres"
+  b) git config --global user.email "nicolas.programador@gmail.com"
+4)Luego añadi todo a mi staging area con git add .
+5)Luego con git commit -m "comentario" añadi todo a mi repositorio local
+6)En git cree un proyecto https://github.com/zassory/nimrodel
+7) Luego con git remote add origin <ruta> linkie mi repositorio local con el repositorio web
+8)La rama por defecto creada es main y con git push origin master me permitio suibir mis datos
+9)Para el otro cambio repetir los pasos 4 , 5 y 8 git push origin master
+
