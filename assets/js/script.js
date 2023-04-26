@@ -32,7 +32,8 @@ var btnEnviar = document.getElementById("btnEnviar");
     }
  });
 
- $(document).ready(function(){    
+ $(document).ready(function(){
+    
 
     $("#btnReserva").click(function(){
         let nombre_reserva = $("#nombre-reserva").val();
@@ -145,6 +146,30 @@ var btnEnviar = document.getElementById("btnEnviar");
          $("#modal").hide();
      });
  });
+
+ function mostrarModal(){
+    var modal = document.getElementById("myModal2");
+    modal.style.display = "block";    
+    modal.setAttribute("class","modal animate__animated animate__fadeIn");
+ }
+ function cerrarModal(){
+    var modal = document.getElementById("myModal2");
+    modal.style.display = "none";
+    modal.setAttribute("class","modal animate__fadeIn animate__animated ");
+ }
+
+ var aModal = document.getElementById("aModal");
+
+ aModal.addEventListener("click", function(){
+    mostrarModal();
+ })
+
+ var btnCerrarModal = document.getElementById("btnCerrarModal");
+ btnCerrarModal.addEventListener("click", function(){
+    cerrarModal();
+ })
+
+ 
 
 
 

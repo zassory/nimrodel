@@ -42,3 +42,14 @@
     margin-top: 10%;
 }
 
+#divImg {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#divImg img {
+    padding-bottom: 1rem;
+}
+
+
